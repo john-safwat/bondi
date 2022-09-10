@@ -1,0 +1,163 @@
+/* global values  */
+:root
+{
+    --dark-blue:#19283f;
+    --white:#ffffff;
+    --cyan:#33d1cc;
+    --yellow:#ffc400;
+    --red:#ff3150;
+    --gray:#a8b9c0;
+    --dark-cyan:#00c6bf;
+    --bg-color:#eff7fa;
+    --padding-top:60px;
+    --padding-bottom:60px;
+}
+.button a { color: var(--yellow) ; }
+.sp-h-one svg { 
+    color: var(--yellow); 
+    font-size: 120px; 
+}
+.sp-h-one span {
+    display: block;
+    width: 160px;
+    height: 3px;
+    background-color: var(--dark-cyan); 
+}
+section {
+    padding-top: var(--padding-top);
+    padding-bottom: var(--padding-bottom);
+}
+body { font-family: 'Roboto', sans-serif;}
+/* global values  */
+/* start navbar  */
+.navbar { background-color: var(--dark-blue);}
+.navbar .navbar-nav .nav-link { color:var(--white) ;}
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover { color: var(--cyan); }
+.navbar .search { border-left:2px solid var(--cyan);}
+.navbar .search svg { color:var(--cyan);}
+.navbar .navbar-toggler svg{color: var(--white);}
+.navbar .navbar-toggler[aria-expanded="true"]{ border: 1px solid var(--cyan); box-shadow: 0px 0px 0px 2px var(--cyan);}
+.navbar .navbar-toggler[aria-expanded="false"]{ border: 1px solid var(--white); box-shadow: none;}
+/* end navbar*/
+/* start header  */
+header { 
+    background-image: url(../img/alexandr-podvalny-n_Jb_d8O43Q-unsplash.jpg);
+    background-size:cover;
+    background-position: center center;
+    background-attachment: fixed; 
+    height:calc(100vh - 72px);
+}
+/* end header  */
+/* start features section  */
+.features .icons{ height: 160px;}
+.features .icons .number {
+    color: var(--cyan);
+    right: 50%;
+    transform: translate(50%);
+    transition: 0.4s;
+}
+.features .icons .icon {
+    color: var(--cyan);
+    font-size: 50px;
+    right: 50%;
+    transform: translate(50%);
+    transition: 0.4s;
+}
+.features h4 {color: var(--yellow);}
+.features .content {box-shadow:none; transition: 0.5s;}
+.features .content:hover{box-shadow: 3px 3px 10px 0px #DDD;}
+.features .content:hover .icon{font-size: 120px; transform: translateX(20%);}
+.features .content:hover .number{font-size: 100px; transform: translateX(130%);}
+/* end features section  */
+/* start services section  */
+.services {background-color: var(--bg-color);  }
+.services .nav-item {font-weight: 600; transition: 0.3s; }
+.services .nav-item:hover {color: var(--red); cursor:pointer; }
+.services .box {padding: 5px; overflow: hidden;}
+.services .box img{transition: 0.6s;}
+.services .box:hover img{transform: scale(1.4) rotate(10deg);}
+.services .box::after {
+    content: "Activity";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:var(--white);
+    font-size: 30px;
+    position: absolute;
+    width: 100%;
+    height: 105%;
+    background-color:#00c6bfa1;
+    left: 0;
+    top:0;
+    transform-origin: center left;
+    transform: scaleX(0);
+    transition: 0.3s;
+}
+.services .box:hover:after{transform: scaleX(1);}
+/* end services section  */
+/* start meet section  */
+.meet{background-color: var(--bg-color);}
+.meet h3{ color: var(--yellow);}
+.meet .row .my-card .img {
+    overflow: hidden;
+    transition: 0.4s;
+    position: relative;
+    z-index: 1;
+}
+.meet .row .my-card .img img{transition: 0.4s; z-index: 2;}
+.meet .row .my-card:hover .img img {transform: scale(1.3) rotate(-10deg); filter:brightness(0.3) blur(2px);}
+.meet .row .my-card:hover .img::after { 
+    content: "Visit";
+    position: absolute;
+    z-index: 23;
+    color: #DDD;
+    top:50%;
+    left:50%;
+    transform: translate(-50% , -50%); 
+    font-size: 30px;
+}
+.meet .row .my-card{ transition: 0.4s;}
+.meet .row .my-card P{height: 100px;}
+.meet .row .my-card:hover {box-shadow: 5px 5px 10px 0px #DDD;}
+.meet .row .my-card h4 {background-color: var(--dark-cyan);}
+/* end meet section  */
+/* start space section  */
+.my-space {
+    background-image: url(../img/fabrizio-conti-kXVogATbFgA-unsplash.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+/* end space section  */
+/* start contact section  */
+.contact .content .card { transition: 0.5s;}
+.contact .content .card:hover {  transform: scale(1.1); }
+/* end contact section  */
+/* start form section  */
+.form { background-color: var(--yellow); }
+.form form .mail { 
+    background-color: transparent;
+    width: 50%;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid var(--white);
+    color: white;
+    font-size: 20px;
+    transition: 0.4s;
+}
+.form form .mail::placeholder{color: var(--white); transition: 0.4s;}
+.form form .mail:focus { outline:none ;border-color:var(--dark-blue) ;}
+.form form .mail:focus::placeholder{ color:var(--dark-blue) ;}
+.form form .btn-main{ background-color: var(--dark-blue); color: var(--yellow);}
+/* end form section  */
+/* start footer section  */
+footer{background-color: var(--dark-blue);}
+.Graphberry {color: var(--cyan);}
+.Bondi-Inc{color: var(--yellow);}
+footer .text-muted .list-group-item{transition: 0.4s;}
+footer .text-muted .list-group-item:hover{color: var(--white); cursor: pointer;}
+footer .icons svg { color: var(--yellow); transition: 0.5s;}
+footer .icons svg:hover { color: var(--white); cursor: pointer;}
+/* end footer section  */
