@@ -125,7 +125,7 @@ header {
 /* end meet section  */
 /* start space section  */
 .my-space {
-    background-image: url(../img/fabrizio-conti-kXVogATbFgA-unsplash.jpg);
+    background-image: linear-gradient(to top, rgba(63,158,251,1) 0%, rgba(252,70,107,1) 71%);
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
